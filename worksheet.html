@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Statement Example</title>
+  <style>
+    /* CSS */
+    .statement {
+      font-size: 24px;
+      color: blue;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Statement Example</h1>
+
+  <p class="statement" id="statement"></p>
+
+  <script>
+    // JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      var statementElement = document.getElementById('statement');
+      var statement = 'This is a statement generated with JavaScript!';
+      statementElement.innerText = statement;
+    });
+  </script>
+
+  <?php
+    // Python (if using server-side processing)
+    statement = 'This is a statement generated with Python!'
+    print("<script>document.getElementById('statement').innerText = '" + statement + "';</script>")
+  ?>
+</body>
+</html>
